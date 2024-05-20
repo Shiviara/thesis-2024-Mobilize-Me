@@ -107,7 +107,7 @@ p {
   color: var(--text-color-primary);
 }
 
-.body-test-tiny {
+.body-text-tiny {
   font-size: var(--font-size-XXS, 12px);
   color: var(--text-color-tertiary);
 }
