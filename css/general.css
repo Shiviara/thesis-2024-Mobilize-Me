@@ -48,7 +48,9 @@ h4,
 h5,
 a,
 button,
-input {
+input,
+th,
+td {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -124,9 +126,6 @@ a {
 }
 
 /*Layout*/
-html {
-  overflow: hidden;
-}
 
 body {
   margin: 0;
@@ -137,12 +136,15 @@ body {
 
 main {
   width: 100vw;
+  overflow: auto;
+  margin-left: 19vw;
 }
 
 #content {
   display: flex;
   flex-direction: column;
   margin: 24px;
+  gap: 24px;
 }
 
 /*Buttons*/
@@ -215,12 +217,13 @@ button {
 /*Side nav*/
 .sidenav {
   display: flex;
+  position: fixed;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
   background-color: var(--cool-grey1);
   height: 100vh;
-  width: 19vw;
+  width: 17vw;
   padding: 24px 16px;
   border-right: 1px solid var(--cool-grey3);
 }
@@ -343,4 +346,75 @@ input::placeholder {
   font-family: "Material Symbols Rounded";
   content: "\e313";
   color: var(--black);
+}
+
+/*Tables*/
+
+table {
+  width: 100%;
+  border: 1px solid var(--cool-grey3);
+  border-radius: 4px;
+}
+
+td,
+th {
+  border-bottom: 1px solid var(--cool-grey3);
+  text-align: left;
+}
+
+th {
+  color: var(--text-color-primary);
+  font-family: var(--font-family-label, "DM Sans");
+  font-size: var(--font-size-XS, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 12px 24px;
+}
+
+td {
+  padding: 16px 24px;
+}
+
+.roles {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 6vw;
+}
+
+.task-groups {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.column1 {
+  width: 200px;
+}
+
+/*Tags*/
+.tag {
+  /*pill*/
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #d6d9e4;
+  width: fit-content;
+}
+
+.tag p {
+  color: rgba(82, 85, 102, 0.7);
+  font-size: var(--font-size-XS);
+}
+
+#task-group1 {
+  background-color: rgba(161, 182, 218, 0.5);
+}
+
+#task-group1 p {
+  color: #7296d5;
 }
