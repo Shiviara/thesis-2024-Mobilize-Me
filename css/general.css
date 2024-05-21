@@ -38,6 +38,11 @@
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 
+.subgroup-drop-down .material-symbols-rounded {
+  font-size: 14px;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
+}
+
 /*Typography*/
 
 p,
@@ -93,7 +98,7 @@ h4 {
 h5 {
   font-size: var(--font-size-XS);
   font-style: normal;
-  font-weight: medium;
+  font-weight: 600;
   line-height: normal;
   color: var(--text-color-primary);
   padding: 4px;
@@ -259,6 +264,18 @@ button {
   align-items: flex-start;
   gap: 4px;
   align-self: stretch;
+}
+
+.subgroup-drop-down {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  align-items: center;
+  color: var(--text-color-secondary);
+}
+
+.subgroup-drop-down h5 {
+  color: var(--text-color-secondary);
 }
 
 .sidenav h5:hover {
