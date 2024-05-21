@@ -452,10 +452,10 @@ td {
   font-size: var(--font-size-XS);
 }
 
-#task-group1 {
+.task-group1 {
   background-color: rgba(161, 182, 218, 0.5);
 }
 
-#task-group1 p {
+.task-group1 p {
   color: #7296d5;
 }
