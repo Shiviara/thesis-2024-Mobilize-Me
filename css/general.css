@@ -274,7 +274,11 @@ button {
   color: var(--text-color-secondary);
 }
 
-.subgroup-drop-down h5 {
+.task-group-list {
+  margin-left: 16px;
+}
+
+.sidenav h5 {
   color: var(--text-color-secondary);
 }
 
@@ -363,7 +367,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.table-users {
+.collapse-content {
   /*table style*/
   /*collapse animation*/
   max-height: 0;
