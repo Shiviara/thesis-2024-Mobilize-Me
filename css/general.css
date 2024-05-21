@@ -120,7 +120,7 @@ p {
 button {
   font-size: var(--font-size-S, 16px);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   color: var(--text-color-secondary);
 }
@@ -310,6 +310,9 @@ button {
 
 .breadcrumbs {
   gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .breadcrumb {
@@ -336,6 +339,8 @@ button {
 #btn-row {
   padding: 16px 24px;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   border-bottom: 1px solid var(--cool-grey3);
 }
