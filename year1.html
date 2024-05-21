@@ -4,11 +4,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Administration Panel</title>
+    <link rel="stylesheet" href="./css/general.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
+    <!--Side panel-->
+    <aside id="sidenav" class="sidenav">
+        <h1>Administration Panel</h1>
+        <div id="side-btns">
+            <button class="btn-text"><span class="material-symbols-rounded">
+                    person_add
+                </span>Create a new user</button>
+            <button class="btn-text"><span class="material-symbols-rounded">
+                    add_circle
+                </span>Create a new group</button>
+            <input type="text" placeholder="Search users and groups">
+        </div>
+
+        <div id="sidenav-groups">
+            <a href="index.html">
+                <h3>Vejle Privatskole</h3>
+            </a>
+            <div id="subgroups">
+                <p class="body-text-tiny">Subgroups</p>
+                <div class="subgroup-drop-down collapse">
+                    <a href="year1.html" class="focus">
+                        <h5>Year 1</h5>
+                    </a>
+                </div>
+                <div class="task-group-list collapse-content">
+                    <a href="#">
+                        <h5>Class A</h5>
+                    </a>
+                    <h5>Class B</h5>
+                    <h5>Maths</h5>
+                    <h5>Theater</h5>
+                </div>
+
+                <div class="subgroup-drop-down collapse">
+                    <a href="#">
+                        <h5>Year 2</h5>
+                    </a>
+                </div>
+                <div class="task-group-list collapse-content">
+                    <h5>Biology</h5>
+                    <h5>English</h5>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!--top bars-->
+    <header>
+        <div id="top-bar">
+            <div class="breadcrumbs">
+                <a href="index.html">
+                    <h2 class="breadcrumb">Vejle Privatskole</h2>
+                </a>
+                <h2>/</h2>
+                <a href="year1.html">
+                    <h2 class="breadcrumb">Year 1</h2>
+                </a>
+            </div>
+            <div id="MyProfile">
+                <span class="material-symbols-rounded">
+                    account_circle
+                </span>
+                <h3>Jakob Jensen</h3>
+            </div>
+        </div>
+        <div id="btn-row">
+            <button class="btn-primary">Add members</button>
+            <button class="btn-primary">Create a new user</button>
+            <button class="btn-primary">Manage task groups</button>
+        </div>
+    </header>
+
+    <!--Dashboard-->
+    <main>
+        <div id="content">
+            <div id="admins-list">
+                <h3 class="collapse">Admins</h3>
+                <div class="collapse-content">
+                    <table>
+                        <tr>
+                            <th class="column1">Name</th>
+                            <th>Roles</th>
+                            <th>Subgroups</th>
+                        </tr>
+                        <tr>
+                            <td class="column1">Jakob Jensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                                <div class="tag task-group2">
+                                    <p>Maths</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="planners-list">
+                <h3 class="collapse">Planners</h3>
+                <div class="collapse-content">
+                    <table>
+                        <tr>
+                            <th class="column1">Name</th>
+                            <th>Roles</th>
+                            <th>Subgroups</th>
+                        </tr>
+                        <tr>
+                            <td class="column1">Jakob Jensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                                <div class="tag task-group2">
+                                    <p>Maths</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Julie Nielsen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                                <div class="tag task-group2">
+                                    <p>Maths</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Rasmus Jørgensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Mads Sørensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group3">
+                                    <p>Class B</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Christopher Andersen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group4">
+                                    <p>Theatre</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Martine Dahl</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group2">
+                                    <p>Maths</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="users-list">
+                <h3 class="collapse">Users</h3>
+                <div class="collapse-content">
+                    <table>
+                        <tr>
+                            <th class="column1">Name</th>
+                            <th>Roles</th>
+                            <th>Subgroups</th>
+                        </tr>
+                        <tr>
+                            <td class="column1">Jakob Jensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                                <div class="tag task-group2">
+                                    <p>Maths</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Maria Christensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group1">
+                                    <p>Class A</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Julie Agard</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <div class="tag task-group3">
+                                    <p>Class B</p>
+                                </div>
+                </div>
+                </td>
+                </tr>
+                <tr>
+                    <td class="column1">Christopher Larsen</td>
+                    <td>
+                        <div class="roles">
+                            <div class="tag">
+                                <p>User</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="task-groups">
+                        <div class="tag task-group4">
+                            <p>Theatre</p>
+                        </div>
+            </div>
+            </td>
+            </tr>
+            <tr>
+                <td class="column1">Line Beck</td>
+                <td>
+                    <div class="roles">
+                        <div class="tag">
+                            <p>User</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="task-groups">
+                    <div class="tag task-group2">
+                        <p>Maths</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">Laura Jørgensen</td>
+                <td>
+                    <div class="roles">
+                        <div class="tag">
+                            <p>User</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="task-groups">
+                    <div class="tag task-group1">
+                        <p>Class A</p>
+                    </div>
+                    <div class="tag task-group4">
+                        <p>Theatre</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">August Bjornsen</td>
+                <td>
+                    <div class="roles">
+                        <div class="tag">
+                            <p>User</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="task-groups">
+                    <div class="tag task-group1">
+                        <p>Class A</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">Oscar Hansen</td>
+                <td>
+                    <div class="roles">
+                        <div class="tag">
+                            <p>User</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="task-groups">
+                    <div class="tag task-group1">
+                        <p>Class A</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="column1">Andrea Frederiksen</td>
+                <td>
+                    <div class="roles">
+                        <div class="tag">
+                            <p>User</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="task-groups">
+                    <div class="tag task-group1">
+                        <p>Class A</p>
+                    </div>
+                    <div class="tag task-group3">
+                        <p>Maths</p>
+                    </div>
+                    <div class="tag task-group4">
+                        <p>Thatre</p>
+                    </div>
+                </td>
+            </tr>
+            </table>
+        </div>
+        </div>
+        </div>
+    </main>
 
 </body>
+<script src="js.js"></script>
 
 </html>

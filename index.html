@@ -21,14 +21,18 @@
     <aside id="sidenav" class="sidenav">
         <h1>Administration Panel</h1>
         <div id="side-btns">
-            <button class="btn-text">Create a new user</button>
-            <button class="btn-text">Create a new group</button>
+            <button class="btn-text"><span class="material-symbols-rounded">
+                    person_add
+                </span>Create a new user</button>
+            <button class="btn-text"><span class="material-symbols-rounded">
+                    add_circle
+                </span>Create a new group</button>
             <input type="text" placeholder="Search users and groups">
         </div>
 
-        <div>
+        <div id="sidenav-groups">
             <a href="index.html">
-                <h3>Vejle Privatskole</h3>
+                <h3 class="focus">Vejle Privatskole</h3>
             </a>
             <div id="subgroups">
                 <p class="body-text-tiny">Subgroups</p>
@@ -53,8 +57,7 @@
                 </div>
                 <div class="task-group-list collapse-content">
                     <h5>Biology</h5>
-                    <h5>History</h5>
-                    <h5>Maths</h5>
+                    <h5>English</h5>
                 </div>
             </div>
         </div>
@@ -69,6 +72,9 @@
                 </a>
             </div>
             <div id="MyProfile">
+                <span class="material-symbols-rounded">
+                    account_circle
+                </span>
                 <h3>Jakob Jensen</h3>
             </div>
         </div>

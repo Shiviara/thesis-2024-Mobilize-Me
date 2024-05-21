@@ -120,7 +120,7 @@ p {
 button {
   font-size: var(--font-size-S, 16px);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
   color: var(--text-color-secondary);
 }
@@ -259,6 +259,12 @@ button {
   align-self: stretch;
 }
 
+#sidenav-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #subgroups {
   display: flex;
   flex-direction: column;
@@ -289,10 +295,22 @@ button {
   border-radius: 2px;
 }
 
+.sidenav h3:hover {
+  background-color: var(--focus);
+  border-radius: 2px;
+}
+
 .sidenav h5:active {
   color: var(--text-color-primary);
   background-color: var(--focus);
   border-radius: 2px;
+}
+
+.focus {
+  background-color: var(--focus);
+  border-radius: 2px;
+  width: 16vw;
+  color: var(--text-color-primary);
 }
 
 /*Top dashboard*/
@@ -310,6 +328,9 @@ button {
 
 .breadcrumbs {
   gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .breadcrumb {
@@ -336,6 +357,8 @@ button {
 #btn-row {
   padding: 16px 24px;
   align-items: center;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
   border-bottom: 1px solid var(--cool-grey3);
 }
@@ -452,10 +475,34 @@ td {
   font-size: var(--font-size-XS);
 }
 
-#task-group1 {
+.task-group1 {
   background-color: rgba(161, 182, 218, 0.5);
 }
 
-#task-group1 p {
+.task-group1 p {
   color: #7296d5;
+}
+
+.task-group2 {
+  background-color: rgba(199, 205, 138, 0.5);
+}
+
+.task-group2 p {
+  color: rgba(148, 163, 10, 1);
+}
+
+.task-group3 {
+  background-color: rgba(218, 161, 178, 0.5);
+}
+
+.task-group3 p {
+  color: rgba(213, 114, 144, 1);
+}
+
+.task-group4 {
+  background-color: rgba(199, 161, 218, 0.5);
+}
+
+.task-group4 p {
+  color: rgba(180, 114, 213, 1);
 }
