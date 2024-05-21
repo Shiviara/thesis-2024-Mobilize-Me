@@ -259,6 +259,12 @@ button {
   align-self: stretch;
 }
 
+#sidenav-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #subgroups {
   display: flex;
   flex-direction: column;
@@ -289,10 +295,22 @@ button {
   border-radius: 2px;
 }
 
+.sidenav h3:hover {
+  background-color: var(--focus);
+  border-radius: 2px;
+}
+
 .sidenav h5:active {
   color: var(--text-color-primary);
   background-color: var(--focus);
   border-radius: 2px;
+}
+
+.focus {
+  background-color: var(--focus);
+  border-radius: 2px;
+  width: 16vw;
+  color: var(--text-color-primary);
 }
 
 /*Top dashboard*/
@@ -463,4 +481,28 @@ td {
 
 .task-group1 p {
   color: #7296d5;
+}
+
+.task-group2 {
+  background-color: rgba(199, 205, 138, 0.5);
+}
+
+.task-group2 p {
+  color: rgba(148, 163, 10, 1);
+}
+
+.task-group3 {
+  background-color: rgba(218, 161, 178, 0.5);
+}
+
+.task-group3 p {
+  color: rgba(213, 114, 144, 1);
+}
+
+.task-group4 {
+  background-color: rgba(199, 161, 218, 0.5);
+}
+
+.task-group4 p {
+  color: rgba(180, 114, 213, 1);
 }
