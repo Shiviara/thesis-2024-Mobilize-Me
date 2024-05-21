@@ -216,6 +216,7 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-align: left;
 }
 
 .btn-disabled {
@@ -280,6 +281,7 @@ button {
 
 .sidenav h5 {
   color: var(--text-color-secondary);
+  width: 15vw;
 }
 
 .sidenav h5:hover {
