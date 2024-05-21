@@ -38,6 +38,11 @@
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 
+.subgroup-drop-down .material-symbols-rounded {
+  font-size: 14px;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
+}
+
 /*Typography*/
 
 p,
@@ -93,7 +98,7 @@ h4 {
 h5 {
   font-size: var(--font-size-XS);
   font-style: normal;
-  font-weight: medium;
+  font-weight: 600;
   line-height: normal;
   color: var(--text-color-primary);
   padding: 4px;
@@ -107,7 +112,7 @@ p {
   color: var(--text-color-primary);
 }
 
-.body-test-tiny {
+.body-text-tiny {
   font-size: var(--font-size-XXS, 12px);
   color: var(--text-color-tertiary);
 }
@@ -140,9 +145,10 @@ main {
   margin-left: 19vw;
 }
 
-#fixed-top {
+header {
+  margin-left: 19vw;
   position: fixed;
-  width: 100%;
+  width: 81vw;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -260,6 +266,22 @@ button {
   align-self: stretch;
 }
 
+.subgroup-drop-down {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  align-items: center;
+  color: var(--text-color-secondary);
+}
+
+.task-group-list {
+  margin-left: 16px;
+}
+
+.sidenav h5 {
+  color: var(--text-color-secondary);
+}
+
 .sidenav h5:hover {
   background-color: var(--focus);
   border-radius: 2px;
@@ -345,7 +367,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.table-users {
+.collapse-content {
   /*table style*/
   /*collapse animation*/
   max-height: 0;

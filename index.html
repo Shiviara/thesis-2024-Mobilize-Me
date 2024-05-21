@@ -32,36 +32,58 @@
             </a>
             <div id="subgroups">
                 <p class="body-text-tiny">Subgroups</p>
-                <a href="#">
-                    <h5>Year 1</h5>
-                </a>
-                <a href="#">
-                    <h5>Year 2</h5>
-                </a>
+                <div class="subgroup-drop-down collapse">
+                    <!-- Arrow icon
+                    <span class="material-symbols-rounded">
+                        keyboard_arrow_right
+                    </span>
+                    -->
+                    <a href="#">
+                        <h5>Year 1</h5>
+                    </a>
+                </div>
+                <div class="task-group-list collapse-content">
+                    <a href="#">
+                        <h5>Class A</h5>
+                    </a>
+                    <h5>Class B</h5>
+                    <h5>Maths</h5>
+                    <h5>Theater</h5>
+                </div>
+
+                <div class="subgroup-drop-down">
+                    <span class="material-symbols-rounded">
+                        keyboard_arrow_right
+                    </span>
+                    <a href="#">
+                        <h5>Year 2</h5>
+                    </a>
+                </div>
             </div>
         </div>
     </aside>
 
+    <!--top bars-->
+    <header>
+        <div id="top-bar">
+            <div class="breadcrumbs">
+                <a href="index.html">
+                    <h2 class="breadcrumb">Vejle Privatskole</h2>
+                </a>
+            </div>
+            <div id="MyProfile">
+                <h3>Jakob Jensen</h3>
+            </div>
+        </div>
+        <div id="btn-row"><button class="btn-primary">Create a new user</button></div>
+    </header>
+
     <!--Dashboard-->
     <main>
-        <div id="fixed-top">
-            <div id="top-bar">
-                <div class="breadcrumbs">
-                    <a href="index.html">
-                        <h2 class="breadcrumb">Vejle Privatskole</h2>
-                    </a>
-                </div>
-                <div id="MyProfile">
-                    <h3>Jakob Jensen</h3>
-                </div>
-            </div>
-            <div id="btn-row"><button class="btn-primary">Create a new user</button></div>
-        </div>
-
         <div id="content">
             <div id="admins-list">
                 <h3 class="collapse">Admins</h3>
-                <div class="table-users">
+                <div class="collapse-content">
                     <table>
                         <tr>
                             <th class="column1">Name</th>
@@ -93,7 +115,7 @@
             </div>
             <div id="planners-list">
                 <h3 class="collapse">Planners</h3>
-                <div class="table-users">
+                <div class="collapse-content">
                     <table>
                         <tr>
                             <th class="column1">Name</th>
@@ -193,6 +215,222 @@
                                 <div class="roles">
                                     <div class="tag">
                                         <p>Planner</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="users-list">
+                <h3 class="collapse">Users</h3>
+                <div class="collapse-content">
+                    <table>
+                        <tr>
+                            <th class="column1">Name</th>
+                            <th>Roles</th>
+                            <th>Subgroups</th>
+                        </tr>
+                        <tr>
+                            <td class="column1">Jakob Jensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>Admin</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>Planner</p>
+                                    </div>
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Maria Christensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Nikole Andersen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Julie Agard</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Christopher Larsen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Line Beck</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Laura Jørgensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">August Bjornsen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Alma Larsen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Carl Dahl</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Alma Hansen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Oscar Hansen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Amalie Clemmensen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 2</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Andrea Frederiksen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="task-groups">
+                                <h5>Year 1</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">Annegrete Nielsen</td>
+                            <td>
+                                <div class="roles">
+                                    <div class="tag">
+                                        <p>User</p>
                                     </div>
                                 </div>
                             </td>
