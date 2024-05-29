@@ -393,7 +393,6 @@ input::placeholder {
 }
 
 .collapse-content {
-  /*table style*/
   /*collapse animation*/
   max-height: 0;
   overflow: hidden;
